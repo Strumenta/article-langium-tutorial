@@ -1,0 +1,48 @@
+{
+  "name": "langium-game",
+  "scopeName": "source.langium-game",
+  "fileTypes": [
+    ".lg"
+  ],
+  "patterns": [
+    {
+      "name": "keyword.control.langium-game",
+      "match": "\\b(Answer|at|for|Game|Riddle|Suggestion|time)\\b"
+    },
+    {
+      "name": "keyword.symbol.langium-game",
+      "match": "(\\:)"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.langium-game",
+          "begin": "/\\*",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.langium-game"
+            }
+          },
+          "end": "\\*/",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.langium-game"
+            }
+          }
+        },
+        {
+          "begin": "(^\\s+)?(?=//)",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.whitespace.comment.leading.cs"
+            }
+          },
+          "end": "(?=$)",
+          "name": "comment.line.langium-game"
+        }
+      ]
+    }
+  }
+}
